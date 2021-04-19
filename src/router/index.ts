@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from 'views/home/index.vue'
-import Vuex from 'views/vuex/index.vue'
-import NotFound from 'views/error/404.vue'
+
+const Home = () => import('views/home/index.vue')
+const Vuex = () => import('views/vuex/index.vue')
+const NotFound = () => import('views/error/404.vue')
 
 const routes: Array<RouteRecordRaw> = [
   {

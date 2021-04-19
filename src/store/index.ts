@@ -1,17 +1,22 @@
 import { createStore } from 'vuex'
 
-const store = createStore({
+export interface StoreState {
+  count: number
+}
+
+const store = createStore<StoreState>({
   state: {
     count: 0
   },
   getters: {
-    double: (state) => {
+    doubleCount: (state) => {
       return state.count * 2
     }
   },
   mutations: {
-    increment: (state, payload) => {
-      state.count = payload
+    increment(state) {
+      const innerState = state
+      innerState.count += 1
     }
   },
   actions: {
