@@ -30,3 +30,4 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 1. 代码规范约束
 2. 提交信息规范约束
 3. 单元测试约束
+4. 添加GitHub Actions 自动化部署
