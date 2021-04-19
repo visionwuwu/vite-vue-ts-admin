@@ -1,0 +1,1 @@
+import{ay as a,aA as r,aB as n,aC as e}from"./vendor.8bc95030.js";var s=a({setup:()=>({})});const t=e("p",null,"您访问的资源未找到！！！",-1);s.render=function(a,e,s,o,u,l){return r(),n("div",null,[t])};export default s;
