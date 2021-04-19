@@ -28,6 +28,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
     "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "sass": "^1.32.10",
     "stylus": "^0.54.8",
@@ -35,5 +36,8 @@
     "vite": "^2.1.5",
     "vite-plugin-imp": "^2.0.7",
     "vue-tsc": "^0.0.24"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
   }
 }
